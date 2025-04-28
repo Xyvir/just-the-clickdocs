@@ -1,0 +1,40 @@
+
+<hr class="divider">
+
+<details>
+  <summary>Article 1</summary>
+  <iframe id="iframe1" 
+  src="https://xyvir.github.io/OleDocs/How_to_Enroll_Students_in_Classes_or_Programs,_and_How_to_Allow_Self-Enrollment.html">
+  </iframe>
+</details>
+
+<hr class="divider">
+
+<details>
+  <summary>Article 2</summary>
+  <iframe id="iframe2" 
+  src="https://xyvir.github.io/OleDocs/How_to_use_Forums_and_Discussion_Board_Assignments_in_Course_Builder.html">
+  </iframe>
+</details>
+
+<hr class="divider">
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+
+  iframe {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    border: none;
+    font-family: "Atkinson Hyperlegible", sans-serif
+  }
+
+  summary {
+    font-size: 1.5em !important;
+    font-weight: bold; !important;
+  }
+</style>
