@@ -1,0 +1,76 @@
+    /* Import Atkinson Hyperlegible font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+        .site-nav {
+          width: fit-content !important;
+        }
+
+        @media (min-width: 66.5rem) {
+        .side-bar {
+            width: 20rem !important;
+            }
+        }
+
+    /* Round Image Corners & add shadow */
+        img {
+          border-radius: 10px;
+          box-shadow: 3px 3px 5px 3px #888888;
+        }
+
+    /* Apply the font to the entire page */
+    body {
+        font-family: 'Atkinson Hyperlegible', sans-serif;
+        /* margin: 0; Remove default margins */
+        /* padding: 0 25%;  Add 33% padding on left and right */
+        /* box-sizing: border-box;  Ensure padding doesn't affect table width */
+    }
+
+    /* Ensure the table takes full width of the available space */
+    table {
+        border-collapse: collapse;
+        border-spacing: 1 10px; /* Creates slight separation between row bubbles */
+        width: 100%; /* Keep table width at 100% of the available space */
+        margin: auto; /* Center the table horizontally */
+    }
+
+    td {
+        padding: 10px;
+    }
+
+/* Headers in table */
+thead tr th {
+    font-size: $font-size-6 !important; /* Largest font size */
+    text-align: left;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+table th, 
+table td {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Odd rows (1st, 3rd, etc.) */
+table tbody tr:nth-child(2n+1) th,
+table tbody tr:nth-child(2n+1) td {
+    text-align: left !important;
+    font-size: $font-size-10 !important; /* Medium size text */
+    border-top: 2px solid #000;
+}
+
+/* Even rows (2nd, 4th, etc.) */
+table tbody tr:nth-child(2n+2) th,
+table tbody tr:nth-child(2n+2) td {
+    font-size: $font-size-4 !important; /* Smaller text size */
+    border-bottom: 2px solid #000;
+}
+
+/* Apply styling to the second column */
+table td:nth-child(2) {
+    min-width: 350px; /* Set the minimum width */
+    width: 350px;     /* Define the standard width */
+    white-space: nowrap; /* Prevent shrinking or text wrapping */
+}
+
+
